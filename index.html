@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carnival Restaurant Menu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 15px;
+}
+
+.menu {
+    max-width: 950px;
+    margin: auto;
+    background: #1b1b1b;
+    border: 2px solid #c9a44c;
+    padding: 40px;
+    box-shadow: 0 0 30px #000;
+}
+
+.header {
+    text-align: center;
+    padding: 25px 10px;
+    border-bottom: 1px solid #c9a44c;
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    color: #e3bd68;
+    letter-spacing: 8px;
+}
+
+.header p {
+    color: #aaa;
+    letter-spacing: 4px;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.header h3 {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 15px;
+    letter-spacing: 3px;
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 35px 10px;
+}
+
+.category {
+    margin-bottom: 30px;
+}
+
+.category h2 {
+    color: #e3bd68;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    border-bottom: 1px solid #75602e;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px dotted #555;
+}
+
+.item h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.item p {
+    color: #999;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+.price {
+    color: #e3bd68;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.tag {
+    font-size: 9px;
+    color: #75d78b;
+    margin-left: 5px;
+}
+
+.footer {
+    text-align: center;
+    border-top: 1px solid #c9a44c;
+    padding-top: 25px;
+    color: #aaa;
+}
+
+.footer h2 {
+    font-family: 'Playfair Display', serif;
+    color: #e3bd68;
+    margin-bottom: 8px;
+}
+
+.footer p {
+    font-size: 12px;
+    margin: 5px;
+}
+
+@media(max-width: 600px) {
+    .menu {
+        padding: 20px 15px;
+    }
+
+    .header h1 {
+        font-size: 37px;
+        letter-spacing: 5px;
+    }
+
+    .menu-content {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 25px 5px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="menu">
+
+    <div class="header">
+        <h1>CARNIVAL</h1>
+        <p>RESTAURANT & CAFE</p>
+        <h3>GOOD FOOD • GOOD MOOD</h3>
+    </div>
+
+    <div class="menu-content">
+
+        <div>
+            <div class="category">
+                <h2>🍔 Burgers</h2>
+
+                <div class="item">
+                    <div>
+                        <h3>Classic Burger</h3>
+                        <p>Fresh veggies & cheese</p>
+                    </div>
+                    <span class="price">₹149</span>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h3>Cheese Burger</h3>
+                        <p>Loaded with melted cheese</p>
+                    </div>
+                    <span class="price">₹179</span>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h3>Chicken Burger</h3>
+                        <p>Crispy chicken patty</p>
+                    </div>
+                    <span class="price">₹199</span>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>🍕 Pizza</h2>
+
+                <div class="item">
+                    <div>
+                        <h3>Margherita Pizza</h3>
+                        <p>Classic cheese pizza</p>
+                    </div>
+                    <span class="price">₹199</span>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h3>Farmhouse Pizza</h3>
+                        <p>Fresh garden vegetables</p>
+                    </div>
+                    <span class="price">₹249</span>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h3>Chicken Pizza</h3>
+                        <p>Chicken & extra cheese</p>
+                    </div>
+                    <span class="price">₹299</span>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>🍟 Starters</h2>
+
+                <div class="item">
+                    <div>
+                        <h3>French Fries</h3>
+                        <p>Crispy golden fries</p>
+                    </div>
+                    <span class="price">₹99</span>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h3>Chicken Nuggets</h3>
+                        <p>Crunchy chicken bites</p>
+                    </div>
+                    <span class="price">₹179</span>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="category">
+                <h2>🍝 Main Course</h2>
+
+                <div class="item">
+                    <div>
+                        <h3>White Sauce Pasta</h3>
+                        <p>Creamy Italian pasta</p>
+                    </div>
+                    <span class="price">₹199</span>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h3>Red Sauce Pasta</h3>
+                        <p>Classic tomato sauce</p>
+                    </div>
+                    <span class="price">₹189</span>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h3>Chicken Noodles</h3>
+                        <p>Asian style noodles</p>
+                    </div>
+                    <span class="price">₹179</span>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>🥤 Beverages</h2>
+
+                <div class="item">
+                    <div>
+                        <h3>Cold Coffee</h3>
+                        <p>Chilled creamy coffee</p>
+                    </div>
+                    <span class="price">₹119</span>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h3>Fresh Lime Soda</h3>
+                        <p>Refreshing lime drink</p>
+                    </div>
+                    <span class="price">₹79</span>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h3>Chocolate Milkshake</h3>
+                        <p>Rich chocolate shake</p>
+                    </div>
+                    <span class="price">₹149</span>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>🍰 Desserts</h2>
+
+                <div class="item">
+                    <div>
+                        <h3>Chocolate Brownie</h3>
+                        <p>Warm chocolate delight</p>
+                    </div>
+                    <span class="price">₹129</span>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h3>Vanilla Ice Cream</h3>
+                        <p>Classic creamy scoop</p>
+                    </div>
+                    <span class="price">₹89</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h2>THANK YOU!</h2>
+        <p>Good food. Great memories. Only at CARNIVAL.</p>
+        <p>Visit Again ❤️</p>
+    </div>
+
+</div>
+
+</body>
+</html>
